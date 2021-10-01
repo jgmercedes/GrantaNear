@@ -98,6 +98,12 @@ near call
   eliminarProyecto "{\"id\": number}" --account-id <tu cuenta testnet>
 ```
 
+# Video en loom:
+
+```html
+https://www.loom.com/share/f602dbfb6b4048e5aeb143e546dc3194
+```
+
 # :framed_picture: Explora el codigo:
 
 GrantaNear smart contract file system.

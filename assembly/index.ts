@@ -7,7 +7,7 @@ export function crearProyecto(
   titulo: string,
   descripcion: string,
   fondos: i32
-): void {
+): string {
   assert(titulo.length > 0, "El titulo no puede estar vacio.");
   assert(descripcion.length > 0, "La descripcion no puede estar vacia.");
   assert(fondos > 9, "Los fondos deben ser mayor a 10 Near");
@@ -20,6 +20,7 @@ export function crearProyecto(
     fondos
   );
   listaProyectos.push(nuevoProyecto);
+  return 'Proyecto creado y agregado.'
 }
 
 export function listarProyectos(): Proyecto[] {
