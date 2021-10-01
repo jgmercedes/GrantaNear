@@ -1,0 +1,16 @@
+{
+  "name": "nearpoll",
+  "version": "1.0.0",
+  "description": "Smart Contract on Near - NearPoll",
+  "main": "index.js",
+  "scripts": {
+    "test": "asp",
+    "build": "asb",
+    "devdeploy": "npm run build && near dev-deploy"
+  },
+  "author": "jgmercedes",
+  "license": "MIT",
+  "devDependencies": {
+    "near-sdk-as": "^3.2.3"
+  }
+}
