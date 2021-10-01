@@ -1,14 +1,17 @@
 {
-  "name": "nearpoll",
+  "name": "grantanear",
   "version": "1.0.0",
-  "description": "Smart Contract on Near - NearPoll",
+  "description": "Near Smart Contract - grantanear",
   "main": "index.js",
   "scripts": {
     "test": "asp",
     "build": "asb",
     "devdeploy": "npm run build && near dev-deploy"
   },
-  "author": "jgmercedes",
+  "authors": [
+    "jgmercedes.near",
+    "robertz3.near"
+  ],
   "license": "MIT",
   "devDependencies": {
     "near-sdk-as": "^3.2.3"
