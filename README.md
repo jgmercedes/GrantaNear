@@ -1,12 +1,12 @@
 # :earth_americas: GrantaNear
 
-GrantaNear es un smart contract creado bajo el Near protocol, el cual permite crear campañas para la recaudacion de fondos en nears dedicados a una causa especifica. Este smart contract permite:
+GrantaNear es un smart contract de Near protocol, el cual permite que los developers de el ecosistema Near puedan dar a conocer sus proyectos a fin de estar entre los mas votados para que lleguen a ser fondeados para el desarollo de estos. Este smart contract permite:
 
-- Crear una campaña.
-- Conseguir informacion de una campaña.
-- Conseguir lista de campañas.
-- Donar a una campaña.
-- Eliminar una campaña.
+- Añadir un proyecto usando el metodo crearProyecto.
+- Chequear la lista de proyectos con el metodo listarProyectos.
+- Verificar informacion de un proyecto con el metodo obtenerProyecto.
+- Votar a favor de un proyecto con el metodo votarProyecto.
+- Eliminar un proyecto creado con el metodo eliminarProyecto.
 
 # :gear: Instalación
 
@@ -35,11 +35,11 @@ near login
 # :page_facing_up: Clonar el repositorio
 
 ```html
-git clone https://github.com/jgmercedes/grantaNearContract.git
+git clone https://github.com/jgmercedes/GrantaNear.git
 ```
 
 ```html
-cd grantaNearContract
+cd GrantaNear
 ```
 
 # :hammer_and_wrench: Build del proyecto y despliegue en development mode.
@@ -61,7 +61,7 @@ yarn devdeploy
 ```html
 near call
 <your deployed contract>
-  crearProyecto "{ \"titulo\": \"Proyecto de prueba\", \"descripcion\": \"Este es un proyecto de prueba\", \"fondos\": 10 }"  --account-id <your test account>
+  crearProyecto "{ \"titulo\": \"string\", \"descripcion\": \"string\", \"fondos\": number }"  --account-id <your test account>
 ```
 
 ## Comando para conseguir informacion de un proyecto:
@@ -69,7 +69,7 @@ near call
 ```html
 near call
 <your deployed contract>
-  dev-1633055352015-39715469037087 obtenerProyecto "{\"id\": 0}" --account-id <your test account>
+  obtenerProyecto "{\"id\": number}" --account-id <your test account>
 ```
 
 ## Comando para conseguir la lista de proyectos:
@@ -85,7 +85,7 @@ near view
 ```html
 near call
 <your deployed contract>
-  votarProyecto "{\"id\": 0}" --account-id
+  votarProyecto "{\"id\": number}" --account-id
   <your test account>
 ```
 
@@ -94,7 +94,7 @@ near call
 ```html
 near call
 <your deployed contract>
-  eliminarProyecto "{\"id\": 0}" --account-id <your test account>
+  eliminarProyecto "{\"id\": number}" --account-id <your test account>
 ```
 
 # :world_map: Explora el codigo:
