@@ -60,23 +60,23 @@ yarn devdeploy
 
 ```html
 near call
-<your deployed contract>
-  crearProyecto "{ \"titulo\": \"string\", \"descripcion\": \"string\", \"fondos\": number }"  --account-id <your test account>
+<tu contrato desplegado>
+  crearProyecto "{ \"titulo\": \"string\", \"descripcion\": \"string\", \"fondos\": number }"  --account-id <tu cuenta testnet>
 ```
 
 ## Comando para conseguir informacion de un proyecto:
 
 ```html
 near call
-<your deployed contract>
-  obtenerProyecto "{\"id\": number}" --account-id <your test account>
+<tu contrato desplegado>
+  obtenerProyecto "{\"id\": number}" --account-id <tu cuenta testnet>
 ```
 
 ## Comando para conseguir la lista de proyectos:
 
 ```html
 near view
-<your deployed contract>
+<tu contrato desplegado>
   listarProyectos "{}"
 ```
 
@@ -84,17 +84,17 @@ near view
 
 ```html
 near call
-<your deployed contract>
+<tu contrato desplegado>
   votarProyecto "{\"id\": number}" --account-id
-  <your test account>
+  <tu cuenta testnet>
 ```
 
 ## Comando para eliminar un proyecto:
 
 ```html
 near call
-<your deployed contract>
-  eliminarProyecto "{\"id\": number}" --account-id <your test account>
+<tu contrato desplegado>
+  eliminarProyecto "{\"id\": number}" --account-id <tu cuenta testnet>
 ```
 
 # :world_map: Explora el codigo:
